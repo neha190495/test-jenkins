@@ -6,7 +6,7 @@ pipeline {
     stages{
         stage('Checkout Source'){
             steps{
-                git url:'https://github.com/neha190495/test-jenkins.git', branch:'master'
+                git url:'https://github.com/neha190495/test-jenkins.git', branch:'main'
             }
         }
         stage('Deploy to Kubernetes'){
