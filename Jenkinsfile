@@ -1,8 +1,5 @@
 pipeline {
     agent { label 'jnlp-slave' }
-    environment {
-        DOCKER_TAG = getDockerTag()
-    }
     stages{
         stage('Checkout Source'){
             steps{
