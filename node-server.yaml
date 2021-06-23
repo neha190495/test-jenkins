@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: node-deployment-jenkins
+spec:
+  selector:
+    matchLabels:
+      app: node-server-jenkins
+  template:
+    metadata:
+      labels:
+        app: node-server-jenkins
+    spec:
+      containers:
+      - name: node-server-jenkins
+        image: 'neha190495/node-server:latest'
+        imagePullPolicy: IfNotPresent
+        securityContext: {}
+        ports:
+        - containerPort: 8080
