@@ -30,12 +30,13 @@
         2. Run the downloaded installer to install nvm. If NVM doesn't appear to work immediately after installation, restart the terminal/powershell.
     2. Mac Users:
         1. Run ```curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash``` in your terminal to install nvm. Follow [this](https://github.com/nvm-sh/nvm) for troubleshooting issues.
-2. Install Nodejs version 12 using NVM package manager.
+2. Install Nodejs version 12.
     1. Using NVM:
         1. Run ```nvm install v12.13.0``` in cmd/terminal.
         2. Run ```nvm use v12.13.0``` in cmd/terminal.
     2. Directly without NVM:
         1. Download & install directly from [here](https://nodejs.org/dist/latest-v12.x/)
+3. Verify the installation by running ```node -v``` and ```npm -v```
 
 ## Install helm 
 Using chocolatey package manager: <br />
@@ -66,10 +67,10 @@ Using chocolatey package manager: <br />
     2. **Windows:** https://download.svcat.sh/cli/latest/windows/amd64/svcat.exe
 2. Move the binary to a directory and add it in your PATH environment variable.
 
-Mac Alternative 2: <br />
+**Mac Alternative 2:** <br />
 Install using brew ```brew install kubernetes-service-catalog-client``` <br />
 
-Windows Alternative 2: <br />
+**Windows Alternative 2:** <br />
 Run the below commands in powershell
 ```
 iwr 'https://download.svcat.sh/cli/latest/windows/amd64/svcat.exe' -UseBasicParsing -OutFile svcat.exe
@@ -83,5 +84,5 @@ This will create a bin folder in C:\Users\<I_NO> \bin .Check if this path is add
 Create your account in [docker hub](https://hub.docker.com/signup) (will be used in workshop to push docker images)
 
 ## Create Cloud foundry trial account
-1. To create a trial account in SAP BTP, follow the tutorial [Get a Free Account on SAP BTP Trial](Get a Free Account on SAP BTP Trial) from Step 4.
+1. To create a trial account in SAP BTP, follow the tutorial [Get a Free Account on SAP BTP Trial](https://developers.sap.com/tutorials/hcp-create-trial-account.html) from Step 4.
 2. Add "Service Manager" in your entitlements if not present. Follow the tutorial [Add a new entitlement to your Subaccount](https://developers.sap.com/tutorials/cp-cf-entitlements-add.html) to add entitlements.
